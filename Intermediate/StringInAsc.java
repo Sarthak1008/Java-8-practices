@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
 public class StringInAsc {
 
     public static void main(String[] args) {
@@ -12,7 +13,8 @@ public class StringInAsc {
         String[] a = new String[]{"Ankit", "Rohit", "Suresh", "Meera", "Dev"};
 
       
-    List<String> d = Arrays.stream(a)
-                               .sorted(Comparator.comparingInt(String::length))
+   Arrays.stream(a).sorted(Comparator.comparingInt(String::length))
                                .collect(Collectors.toList());
+}
+
 }
